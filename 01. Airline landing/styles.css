@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    background-image: url(./images/img.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.navigation {
+    background-color: rgba(0, 0, 0, 0.82);
+    padding: 12px 0;
+    position: absolute;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+}
+
+.navigation.opened {
+    transform: translateX(0);
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-list-link {
+    font-size: 18px;
+    color: #d2d2d2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-list-item {
+    padding: 6px 0;
+}
+
+.burger-menu {
+    border: none;
+    background: none;
+    position: absolute;
+    left: 5px;
+    top: 14px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.left-column {
+    text-align: center;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 20px;
+    margin: 36px 0 0 0;
+    font-weight: normal;
+}
+
+.show-button {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border: 0 solid #1E90FF;
+    background-color: #1E90FF;
+    border-radius: 4px;
+    padding: 12px 30px;
+    margin: 44px 0;
+    display: inline-block;
+}
+
+.right-column {
+    text-align: center;
+    color: #d3d3d3;
+    margin: 0 15px 20px 15px;
+}
+
+.form {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.form-column {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.label-list {
+    display: block;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.form-input {
+    width: 100%;
+    height: 36px;
+    margin: 6px 0 12px;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid #0e6ab3;
+}
+
+.page-checkbox:checked + .label-checkbox {
+    color: black;
+}
+
+.label-checkbox {
+    text-transform: uppercase;
+}
+
+#checklabel {
+    margin-right: 44px;
+}
+
+.submitButton {
+    margin-top: 19px;
+    text-transform: uppercase;
+    color: white;
+    border: 0 solid #1E90FF;
+    background-color: #1E90FF;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .page {
+        background-size: cover;
+        min-height: 100vh;
+    }
+    
+    .right-column {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form-column {
+        width: calc(50% - 13px);
+        margin: 0;
+    }
+
+    .form {
+        padding: 15px 25px;
+    }
+
+    .submitButton {
+        margin-top: 0;
+    }
+
+    .submit-row {
+        margin-top: 26px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        display: flex;
+        height: calc(100vh - 97px);
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .navigation {
+        position: static;
+        width: calc(100% - 90px);
+        transform: translateX(0);
+        background-color: transparent;
+    }
+    
+    .nav-list {
+        text-align: end;
+    }
+
+    .nav-list-item {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .nav-list-link:hover {
+        color: #FFF;
+        transition: color 0.3s ease-in;
+    }
+
+    .right-column {
+        width: 50%;
+        margin: 15px;
+    }
+
+    .left-column {
+        width: 50%;
+        margin: 15px;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    .page-title {
+        font-size: 42px;
+        text-align: left;
+        padding-right: 80px;
+    }
+
+    .show-button {
+        padding: 17px 45px;
+        font-size: 22px;
+    }
+
+    .label-checkbox {
+        font-size: 18px;
+    }
+
+    #checklabel {
+        margin-right: 22px;
+    }
+
+    .show-button:hover, .submitButton:hover {
+        background:transparent;
+        transition: color 0.3s ease-in;
+        color: black;
+        border: 1px solid #1E90FF;
+    }
+}

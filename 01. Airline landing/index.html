@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane land</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+    <header class="header">
+        <button class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="logo">
+            places
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="https//:home.com" class="nav-list-link">home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https//:city.com" class="nav-list-link">city guides</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https//:serve.com>" class="nav-list-link">services</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https//:travel.com" class="nav-list-link">travel with us</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https//:contact.com" class="nav-list-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="left-column">
+            <h1 class="page-title">Explore The World With Ease</h1>
+            <a href="https//:home.com" class="show-button">
+                see onepage verion
+            </a>
+        </div>
+        <div class="right-column">
+            <div class="form">
+                <form>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="from-input" class="label-list">from</label>
+                            <input id="from-input" class="form-input"/>
+                        </div>
+                        <div class="form-column">
+                            <label for="to-input" class="label-list">to</label>
+                            <input id="to-input" class="form-input"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="departure-input" class="label-list">departure</label>
+                            <input id="departure-input" class="form-input"/>
+                        </div>
+                        <div class="form-column">
+                            <label for="arrival-input" class="label-list">arrival</label>
+                            <input id="arrival-input" class="form-input"/>
+                        </div>
+                    </div>
+                    <div class="form-row submit-row">
+                        <div class="form-column">
+                            <input type="checkbox" id="first-checkbox" class="page-checkbox"/>
+                            <label for="first-checkbox" class="label-checkbox" id="checklabel">round</label>
+                            <input type="checkbox" id="second-checkbox" class="page-checkbox"/>
+                            <label for="second-checkbox" class="label-checkbox">oneway</label>
+                        </div>
+                        <div class="form-column submit">
+                            <button type="submit" class="submitButton">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        let burgerButton = document.querySelector(".burger-menu");
+        burgerButton.addEventListener("click", function(event) {
+            let navigation = document.querySelector('.navigation');
+            navigation.classList.toggle("opened");
+        })
+    </script>
+</body>
+</html>
