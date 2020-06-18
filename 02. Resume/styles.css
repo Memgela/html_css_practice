@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Mont";
+    src: url("./fonts/Mont-Black.woff2") format("woff2");
+}
+
+* {
+    font-family: "Roboto", sans-serif; 
+    color: #080A09;
+}
+
+.content {
+    padding: 15px;
+}
+
+.logo, .email, .phone {
+    text-align: center;
+}
+
+.email, .phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    display: block;
+}
+
+.page-title {
+    font-family: "Mont", serif;
+    margin-bottom: 32px;
+    font-size: 34px;
+}
+
+.intro {
+    font-family: 'DM Serif Text', serif;
+    font-weight: normal;
+    margin-bottom: 32px;
+    font-size: 26px;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list-item {
+    padding-bottom: 18px;
+    font-size: 16px;
+    color: #000;
+}
+
+.skills-list-link {
+    color: #00A862;
+    font-weight: 700;
+}
+
+.job-history-title {
+    color: #000;
+}
+
+.years {
+    display: flex;
+}
+
+.description {
+    display: flex;
+}
+
+.start-time {
+    height: 36px;
+    width: 52px;
+    text-align: center;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+}
+
+.year {
+    text-align: center;
+    color: white;
+    padding-top: 8.5px;
+}
+
+.line {
+    border-bottom: 2px solid #F4F2EE;
+    height: 18px;
+}
+
+.ball {
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    margin-top: 14.5px;
+    flex-shrink: 0;
+    border: 1px solid #FFFFFF;
+}
+
+.position {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.job-information {
+    margin-left: 15px;
+}
+
+.univer-line {
+    width: 8px;
+}
+
+.univer-year, .univer-ball {
+    background-color: #004093;
+}
+
+.level-line {
+    width: 16px;
+}
+
+.level-year, .level-ball {
+    background-color: #00A2C7;
+}
+
+.geniant-line {
+    width: 28px;
+}
+
+.geniant-year, .geniant-ball {
+    background-color: #CA0005;
+}
+
+.captura-line {
+    width: 46px;
+}
+
+.captura-year, .captura-ball {
+    background-color: #F76200;
+}
+
+.zaarly-year, .zaarly-ball {
+    background-color: #EFBD00;
+}
+
+.zaarly-line {
+    width: 68px;
+}
+
+.director-zaarly-year, .director-zaarly-ball {
+    background-color: #00A862;
+}
+
+.director-zaarly-line {
+    width: 116px;
+}
+
+.self-description-title, .job-history-title {
+    font-family: 'DM Serif Text', serif;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+.self-description-item {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 1.5em;
+}
